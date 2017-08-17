@@ -1,0 +1,213 @@
+@import "juice";
+
+
+
+
+
+.navCSS {
+  background-color: whitesmoke;
+  border-bottom: -1px solid #ccc;
+
+  width:100%;
+
+
+  ul a {
+
+    padding: 0;
+    height: 64px !important;
+
+  }
+
+
+  li{
+    width:25%;
+    box-sizing: border-box;
+    display: inline-block;
+
+    text-align: center;
+
+    &:hover{
+      .fa-heart-o{
+        color:black;
+      }
+    }
+    .fa {
+      color:black;
+      &:hover{
+        color: inherit;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+.background{
+
+  @include absolute( 0, null, null, 0);
+  @include size( 100%, 100%);
+  background-size: cover;
+}
+
+
+
+.mainContent{
+  width:40%;
+  padding-top: 4%;
+
+
+  @include bp(0px,468px){
+    width: 90%;
+  }
+  @include bp(468px, 1024px){
+    width: 60%;
+  }
+}
+
+.liAboutME{
+  width: 100%;
+}
+
+
+
+.mar10 {
+  margin:10px 6px;
+}
+.pad8{
+  padding: 8px 4px !important;
+}
+
+.showBox {
+  transition: transform 2s ease-in-out;
+  &.show{
+    display: block; transform: translateY(-100%);
+  }
+  &.hide{
+    display: none; transform: translateY(0%);
+  }
+}
+
+.theBlackBox{
+  position: fixed;
+  @include  size(100%);
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+
+}
+
+.skillsContainer{
+  position: absolute;
+  background-color: white;
+  border-radius : 5px;
+  padding:30px;
+  z-index: 50;
+  margin-top: 40px;
+  left: 10%;
+  @include size(80%,86%);
+
+  .card{
+    @include centerer;
+    @include size (40%, 60%);
+  }
+
+}
+
+
+.portofolioContainer{
+  position: absolute;
+  background-color: white;
+  border-radius : 5px;
+  padding:10px;
+  z-index: 50;
+  margin-top: 25px;
+  left: 10%;
+  overflow: scroll;
+  @include size(80%,86%);
+}
+
+.contactContainer{
+  position: absolute;
+  background-color: white;
+  border-radius : 5px;
+  padding:10px;
+  z-index: 50;
+  margin-top: 40px;
+  left: 10%;
+  @include size(80%,86%);
+}
+
+.waves-effect {
+  margin-left: 0px;
+  padding-left: 15px;
+}
+
+.btn, .btn-large {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  letter-spacing: .5px;
+  background-color: white;
+}
+
+
+.linkedIn{
+  background: #0077B5;
+  font-size: 12px;
+  width:25%;
+  font-weight: bold;
+  padding: 5px;
+  line-height: 24px;
+  color: white;
+  text-transform: capitalize;
+  margin-right: 10px;
+  &:hover{
+    background: #65A6D4;
+  }
+}
+
+.fb {
+  background: #3b5998;
+  width: 25%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  line-height: 24px;
+  color: white;
+  text-transform: capitalize;
+  margin-right: 10px;
+  &:hover{
+    background: #4e81d4;
+  }
+}
+.btn-floating {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  background-color: #e6301e;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.card{
+  margin-top: 3%;
+}
+
+p{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+

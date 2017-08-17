@@ -1,0 +1,35 @@
+.border {
+  border: black solid 1px; }
+
+.background {
+  background: url("../images/background.png") center center; }
+
+.imgcont {
+  background: url("../images/fit.jpg") center center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  background-size: cover;
+  border: 1px;
+  margin: 0 0 0 5px;
+  box-shadow: none;
+  transition: .2s; }
+  .imgcont .child {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: darkcyan;
+    min-height: 150px;
+    min-width: 300px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.37);
+    transform: translateX(120%);
+    transition: .2s; }
+  .imgcont:hover {
+    transform: scale(1.04);
+    box-shadow: 0 26px 37px -6px rgba(0, 0, 0, 0.67); }
+    .imgcont:hover .child {
+      transform: translateX(6%); }
+
+/*# sourceMappingURL=output.css.map */
